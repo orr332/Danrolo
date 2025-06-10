@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- InstanceEndEditable -->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.windows-engine.js"></script>
+<script type="text/javascript">
+
+var windowCounter = 1;
+
+$(document).ready(function() {
+	
+	$.newWindow({id:"ajaxwindow",posx:400,posy:100,title:"Ajax Window Sample"});
+    $.updateWindowContentWithAjax("ajaxwindow","ajaxcontent.html");
+    
+    $.newWindow({id:"iframewindow",posx:600,posy:200,width:600,height:400,title:"iFrame Window Sample", type:"iframe"});
+    $.updateWindowContent("iframewindow",'<iframe src="http://www.wikipedia.com" width="600" height="400" />');
+    
+    $("#createwindow").click(function(){
+        $.newWindow({title:"New window " + windowCounter++,content:"This is a new window"});
+    });
+    
+    $("#closeall").click(function(){
+        $.closeAllWindows();
+    });
+	
+});
+</script>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+
+
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="CSS/list.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#e1dfdf">
+
+
+<div id="contentWrapper">
+  <div id="nav">
+  
+  <ul class="topNav">
+            <li class="remover"><a href="index.html" class="transition">Home</a></li>
+            <li><a href="design.html">Design</a><li/>
+            <li><a href="static.html" class="transition">Static</a></li>
+            <li><a href="photo.html" class="transition">Photo</a></li>
+            <li><a href="archive.html" class="transition">Archive</a>
+       
+       <ul class="subNav"> 
+        <li><a href="tips.html">Web Design Tips</a></li> 
+        <li><a href="books.html">Resources</a></li>  
+        <li><a href="books.html">Resources</a></li> 
+        <li><a href="books.html">Resources</a></li> 
+        <li><a href="books.html">Resources</a></li> 
+      </ul> 
+      
+      
+      <li/>
+            
+            
+            <li><a href="about.html" class="transition">About</a></li>
+            <li><a href="archive.html" class="transition">Contact</a></li>
+    </ul>
+  </div>
+     
+ 
+
+<div class="textBox">
+<!-- InstanceBeginEditable name="mainContent" -->
+
+   
+        <b>Tips On Good Typography And Layout</b>
+<p><b>1</b>Two fonts, Three maximum. Consider that some fonts work better in logos and titles.</p>
+
+<p><b>2</b>Proportional grid. Have proportional grid and stick to it</p>
+
+<p><b>3</b>Scale. Vary the scale to vary the interest in different areas of the layout. Bigger is not always more important. Difference is what distinguishes one area from another, and what calls attention to any given area.</p>
+
+<p><b>4</b>Use restraint when tracking text in titles, and avoid it in text block.</p>
+
+<p><b>5</b>Balance busy areas with quiet areas. Quiet areas are sometimes referred to as "whitespace".</p>
+
+<p><b>6</b>Leading text block lends a pleasing, easy to read quality to smaller amounts of text. Leading can also enhance legibility in longer text block.</p>
+
+<p><b>7</b>In general, serif fonts are easier to read in printed text block, while sans-seriff fints are more legible in on-screen text block.</p>
+
+<p><b>8</b>Every piece of text, whether title or block, needs to have space around it, unless layering or interfacing text is part of an overall design strategy.</p>
+
+<p><b>9</b>Have a color set defined at the outset and stick to it.</p>
+
+<p><b>10</b>Text block should have no more than 8 - 10 words per line before wrap.</p>
+
+<p><b>11</b>Fully justified text block us almost never used in significant length of text block, due to the unpredictable termination of the last line.</p>
+
+<p><b>12</b>Use em dashes – rather than en dashes - in text block. En dashes are really minus signs, while em dashes (OPT -) are appropriate in narrative.</p>
+
+<p><b>13</b>Do not convert fonts to bold or italic, use rather the font face versions.</p>
+
+<p><b>14</b></span>Screen back patterns, subliminal messages, and shapes behind your text on a poster or a postcard. Take care that the screen does not intefere with legibility of the text.</p>
+
+<p><b>15</b>Reverse the field (dark field, light type) to create an area of interest.</p>
+
+<p><b>16</b>Use boldface, font color and change of font size rather than underline and all caps to distinguish areas of text.</p>
+
+
+
+
+
+<!-- InstanceEndEditable -->
+
+</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

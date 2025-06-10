@@ -1,38 +1,113 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>.kjljv</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="myStyle.css">
-    </head>
-    <body>
-<div class="container">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- InstanceEndEditable -->
 
-                <nav>
-                <ul>
-                    <li><img src="logo.png" alt="Logo"></li>
-                    <li><a href="https://www.w3schools.com" target="_blank">Home</a></li>
-                    <li><a href="https://www.w3schools.com" target="_blank">Portfolio</a></li>
-                    <li><a href="https://www.w3schools.com" target="_blank">Home</a></li>
-                    <li><a href="https://www.w3schools.com" target="_blank">About</a></li>
-                    <li><a href="https://www.w3schools.com" target="_blank">Contact</a></li>
-                    <li><a href="https://www.w3schools.com" target="_blank">Contact</a></li>
-                </ul>
-            </nav>
-    </div>
-    <div class="containerGrid">
-    <div class="grid-Layout">            
-        <div class="cardFlexRow"><h4>Number One</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-        <div class="cardFlex"><h4>Number Two</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-        <div class="cardFlex"><h4>Number Three</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-        <div class="cardFlexRow"><h4>Number Four</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-    </div>
-    </div> 
-    <footer>
-        lbl;kb
-    </footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.windows-engine.js"></script>
+<script type="text/javascript">
+
+var windowCounter = 1;
+
+$(document).ready(function() {
+	
+	$.newWindow({id:"ajaxwindow",posx:400,posy:100,title:"Ajax Window Sample"});
+    $.updateWindowContentWithAjax("ajaxwindow","ajaxcontent.html");
+    
+    $.newWindow({id:"iframewindow",posx:600,posy:200,width:600,height:400,title:"iFrame Window Sample", type:"iframe"});
+    $.updateWindowContent("iframewindow",'<iframe src="http://www.wikipedia.com" width="600" height="400" />');
+    
+    $("#createwindow").click(function(){
+        $.newWindow({title:"New window " + windowCounter++,content:"This is a new window"});
+    });
+    
+    $("#closeall").click(function(){
+        $.closeAllWindows();
+    });
+	
+});
+</script>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+
+
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="CSS/list.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#e1dfdf">
+
+
+<div id="contentWrapper">
+  <div id="nav">
+  
+  <ul class="topNav">
+            <li class="remover"><a href="index.html" class="transition">Home</a></li>
+            <li><a href="design.html">Design</a><li/>
+            <li><a href="static.html" class="transition">Static</a></li>
+            <li><a href="photo.html" class="transition">Photo</a></li>
+            <li><a href="archive.html" class="transition">Archive</a>
+       
+       <ul class="subNav"> 
+        <li><a href="tips.html">Web Design Tips</a></li> 
+        <li><a href="books.html">Resources</a></li>  
+        <li><a href="books.html">Resources</a></li> 
+        <li><a href="books.html">Resources</a></li> 
+        <li><a href="books.html">Resources</a></li> 
+      </ul> 
+      
+      
+      <li/>
+            
+            
+            <li><a href="about.html" class="transition">About</a></li>
+            <li><a href="archive.html" class="transition">Contact</a></li>
+    </ul>
+  </div>
+     
+ 
+
+<div class="textBox">
+<!-- InstanceBeginEditable name="mainContent" -->
+
+  <img src="images/sunset2.jpg" alt="" width="323" border="1" />
+   <p>Taken near the Grand/Central intersection, where the 17th District Area Police Station is located, in Chicago,IL.<p>
+    
+        <p><img src="images/highway2.jpg" alt="" width="323" border="1" /><P>
+
+    
+    <b>Console, a personal design blog</b><br/>
+
+
+      <a href="#" id="createwindow"><img src="images/plant.jpg" border="0" / class="thumb"/></a>Till I can get a Web server, I will be updating content using MAMP as a local host server. This is where my blog will be, featuring my journal entries, paintings, digital works, basically an artistic playground for me to put up online. The subnavigation will be on the right, or left depending on how I feel about it, and will feature archives, catergories, ad links, maybe more.</p>
+          <p> 
+<b>Sunset, Photo taken near Grand and Central Ave, by 17th police department</b><br/>
+ <img src="images/sunset.jpg" / class="thumb" />
+Finally gotten a web host and a domain for free so I will be able to experiment in my designs. Right now I need to focus on design and developement and to able to improve. AJAX, JavaScript, as well as CSS are all on my list of goals to achieve. Even though using &quot;lorem ipsum&quot; often arouses curiosity due to its resemblance to classical Latin, it is not intended to have meaning. Where text is visible in a document, people tend to focus on the textual content rather than upon overall presentation, so publishers use lorem ipsum when displaying a typeface or design in order to direct the focus to presentation.</p>
+<p><b>Ceiling</b><br/>
+
+            <img src="images/ceiling.jpg" / class="thumb">
+    Till I can get a Web server, I will be updating content using MAMP as a local host server. This is where my blog will be, featuring my journal entries, paintings, digital works, basically an artistic playground for me to put up online. The subnavigation will be on the right, or left depending on how I feel about it, and will feature archives, catergories, ad links, maybe more.</p>
+    <p> 
+<b>Japanese Pond</b><br/>
+ <img src="images/pond.jpg" / class="thumb">
+Finally gotten a web host and a domain for free so I will be able to experiment in my designs. Right now I need to focus on design and developement and to able to improve. AJAX, JavaScript, as well as CSS are all on my list of goals to achieve.
+<p>
+Even though using "lorem ipsum" often arouses curiosity due to its resemblance to classical Latin, it is not intended to have meaning. Where text is visible in a document, people tend to focus on the textual content rather than upon overall presentation, so publishers use lorem ipsum when displaying a typeface or design in order to direct the focus to presentation.</p>
+<!-- InstanceEndEditable -->
+
 </div>
-    </body>
-    </html>
+</div>
+</body>
+<!-- InstanceEnd --></html>

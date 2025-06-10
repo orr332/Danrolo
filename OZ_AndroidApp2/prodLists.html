@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/> 
+  
+
+<title>OrderZone VMI APP</title>
+
+
+ 
+<link media="screen" href="css/OZipadStyle.css" rel="stylesheet"  type="text/css" />
+</head>
+
+<body id="gradient">
+<div class="wrapper">
+
+<div class="topBar">
+   <ul class="nav">
+                <li class="OZlogo"><a href="index.html"><img style="padding-top:8px;" src="images/ozAppLogo.png" width="100" height="19" alt="OrderZone" /></a></li>  
+                
+            <li><a href="history.html">Welcome Brent Ray</a></li>
+              
+        <li><a href="search.html"><img src="images/scan.png" width="26" height="34" /></a></li> 
+</ul>
+    </div>
+
+<style>
+#navigation {
+	/*border-radius:5px 5px 5px 5px;*/
+	padding-top:8px;
+		width:100%;
+		float:left;
+		left:0;
+		top:35px;
+	height:27px;
+	position:fixed;
+	clear:left;
+		z-index:1000;
+	background-image:url(images/redNav.jpg);
+	background-repeat:repeat-x;
+	color: #fff;
+    text-align: center;
+	
+	}
+
+#navigation ul {
+    display: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+#navigation ul.expanded {
+    display: block;
+	margin-top:27px;
+}
+
+#navigation li a {
+	text-align:left;
+	padding-left:20px;
+	background-color:#f1f1f1;
+    display: block;
+	line-height:35px;
+	    border-top: 1px solid #dfdcdc;
+    font-size: 1.2em;
+	font-family:Arial, Helvetica, sans-serif;
+    color: #252525;
+    text-decoration: none;
+}
+.menu_button {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.menu_button:hover {
+    color: #fff;
+    text-decoration:underline;
+}
+</style>
+<script>
+var originalNavClasses;
+
+function toggleNav() {
+    var elem = document.getElementById('navigation_list');
+    var classes = elem.className;
+    if (originalNavClasses === undefined) {
+        originalNavClasses = classes;
+    }
+    elem.className = /expanded/.test(classes) ? originalNavClasses : originalNavClasses + ' expanded';
+}
+</script>
+    <div id="navigation">
+    <a  style="float:left; padding-left:10px;"class="menu_button" href="#footer_nav" onclick="toggleNav(); return false;">&#9776;  MENU</a>
+   
+<input type="text" id="searchField" value="SEARCH"/>
+<ul id="navigation_list" role="navigation">
+    <li><a href=#>Quick Order</a></li>
+        <li><a href=#>Browse Lists</a></li>
+        <li><a href=#>Lists</a></li>
+        <li><a href=#>My Account</a></li>
+        <li><a href=#>OAS</a></li>
+        <li><a href=#>Support</a></li>
+        <li><a href=index.html>Home</a></li>
+    </ul>
+</div>
+  
+
+
+
+
+
+<div class="content">
+  <div class="topContentHeader">
+<a class="left" href="#">Back</a>
+<div class="title" style="margin-left:auto; margin-right:auto;" id="title2">Purchase Products</div>
+<a class="right" href="#">Next</a>
+</div>
+
+
+
+      <div class="browseSection" align="center">
+     <img class="prodImgBack" src="images/thumbNail.jpg" width="145" height="114" />
+      <h2><a href="fuji.html">AirMaster Inc.</a></h2>
+                 <div class="prodPrevRowa">
+                <div class="prodPrevCola">Unique Location Code</div>
+                <div class="prodPrevColb">br office Supplies</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">OZ Part #</div>
+                <div class="prodPrevColb">OZ1EE82</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">Mft. Name</div>
+                <div class="prodPrevColb">Kimberly Clark</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">Short Description</div>
+                <div class="prodPrevColb">Facial Tissue</div>
+              </div>
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">OZ Price</div>
+                <div class="prodPrevColb">$45.67</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">UOM</div>
+                <div class="prodPrevColb">BX</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">UOM Qty</div>
+                <div class="prodPrevColb">4</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">Order Type</div>
+                <div class="prodPrevColb">E</div>
+              </div> 
+              <div class="prodPrevRowa" style="margin-top:10px;">
+                <div class="prodPrevCola" id="prodPrevSubmit"><a href="#">PURCHASE</a></div>
+                <div class="prodPrevColb" id="prodPrevSubmit"><a href="#">REMOVE</a></div>
+              </div>
+              </div>
+          
+          
+          
+          
+          
+          
+          
+          
+         
+         
+         
+         
+   
+           <div class="browseSection" align="center">
+     <img class="prodImgBack" src="images/thumbNail.jpg" width="145" height="114" />
+      <h2><a href="fuji.html">AirMaster Inc.</a></h2>
+                 <div class="prodPrevRowa">
+                <div class="prodPrevCola">Unique Location Code</div>
+                <div class="prodPrevColb">br office Supplies</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">OZ Part #</div>
+                <div class="prodPrevColb">OZ1EE82</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">Mft. Name</div>
+                <div class="prodPrevColb">Kimberly Clark</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">Short Description</div>
+                <div class="prodPrevColb">Facial Tissue</div>
+              </div>
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">OZ Price</div>
+                <div class="prodPrevColb">$45.67</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">UOM</div>
+                <div class="prodPrevColb">BX</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">UOM Qty</div>
+                <div class="prodPrevColb">4</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">Order Type</div>
+                <div class="prodPrevColb">E</div>
+              </div> 
+              <div class="prodPrevRowa" style="margin-top:10px;">
+                <div class="prodPrevCola" id="prodPrevSubmit"><a href="#">PURCHASE</a></div>
+                <div class="prodPrevColb" id="prodPrevSubmit"><a href="#">REMOVE</a></div>
+              </div>
+              </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           <div class="browseSection" align="center">
+     <img class="prodImgBack" src="images/thumbNail.jpg" width="145" height="114" />
+      <h2><a href="fuji.html">AirMaster Inc.</a></h2>
+                 <div class="prodPrevRowa">
+                <div class="prodPrevCola">Unique Location Code</div>
+                <div class="prodPrevColb">br office Supplies</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">OZ Part #</div>
+                <div class="prodPrevColb">OZ1EE82</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">Mft. Name</div>
+                <div class="prodPrevColb">Kimberly Clark</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">Short Description</div>
+                <div class="prodPrevColb">Facial Tissue</div>
+              </div>
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">OZ Price</div>
+                <div class="prodPrevColb">$45.67</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">UOM</div>
+                <div class="prodPrevColb">BX</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">UOM Qty</div>
+                <div class="prodPrevColb">4</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">Order Type</div>
+                <div class="prodPrevColb">E</div>
+              </div> 
+              <div class="prodPrevRowa" style="margin-top:10px;">
+                <div class="prodPrevCola" id="prodPrevSubmit"><a href="#">PURCHASE</a></div>
+                <div class="prodPrevColb" id="prodPrevSubmit"><a href="#">REMOVE</a></div>
+              </div>
+              </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           <div class="browseSection" align="center">
+     <img class="prodImgBack" src="images/thumbNail.jpg" width="145" height="114" />
+      <h2><a href="fuji.html">AirMaster Inc.</a></h2>
+                 <div class="prodPrevRowa">
+                <div class="prodPrevCola">Unique Location Code</div>
+                <div class="prodPrevColb">br office Supplies</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">OZ Part #</div>
+                <div class="prodPrevColb">OZ1EE82</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">Mft. Name</div>
+                <div class="prodPrevColb">Kimberly Clark</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">Short Description</div>
+                <div class="prodPrevColb">Facial Tissue</div>
+              </div>
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">OZ Price</div>
+                <div class="prodPrevColb">$45.67</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">UOM</div>
+                <div class="prodPrevColb">BX</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">UOM Qty</div>
+                <div class="prodPrevColb">4</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">Order Type</div>
+                <div class="prodPrevColb">E</div>
+              </div> 
+              <div class="prodPrevRowa" style="margin-top:10px;">
+                <div class="prodPrevCola" id="prodPrevSubmit"><a href="#">PURCHASE</a></div>
+                <div class="prodPrevColb" id="prodPrevSubmit"><a href="#">REMOVE</a></div>
+              </div>
+              </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           <div class="browseSection" align="center">
+     <img class="prodImgBack" src="images/thumbNail.jpg" width="145" height="114" />
+      <h2><a href="fuji.html">AirMaster Inc.</a></h2>
+                 <div class="prodPrevRowa">
+                <div class="prodPrevCola">Unique Location Code</div>
+                <div class="prodPrevColb">br office Supplies</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">OZ Part #</div>
+                <div class="prodPrevColb">OZ1EE82</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">Mft. Name</div>
+                <div class="prodPrevColb">Kimberly Clark</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">Short Description</div>
+                <div class="prodPrevColb">Facial Tissue</div>
+              </div>
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">OZ Price</div>
+                <div class="prodPrevColb">$45.67</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">UOM</div>
+                <div class="prodPrevColb">BX</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">UOM Qty</div>
+                <div class="prodPrevColb">4</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">Order Type</div>
+                <div class="prodPrevColb">E</div>
+              </div> 
+              <div class="prodPrevRowa" style="margin-top:10px;">
+                <div class="prodPrevCola" id="prodPrevSubmit"><a href="#">PURCHASE</a></div>
+                <div class="prodPrevColb" id="prodPrevSubmit"><a href="#">REMOVE</a></div>
+              </div>
+              </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           <div class="browseSection" align="center">
+     <img class="prodImgBack" src="images/thumbNail.jpg" width="145" height="114" />
+      <h2><a href="fuji.html">AirMaster Inc.</a></h2>
+                 <div class="prodPrevRowa">
+                <div class="prodPrevCola">Unique Location Code</div>
+                <div class="prodPrevColb">br office Supplies</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">OZ Part #</div>
+                <div class="prodPrevColb">OZ1EE82</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">Mft. Name</div>
+                <div class="prodPrevColb">Kimberly Clark</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">Short Description</div>
+                <div class="prodPrevColb">Facial Tissue</div>
+              </div>
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">OZ Price</div>
+                <div class="prodPrevColb">$45.67</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">UOM</div>
+                <div class="prodPrevColb">BX</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">UOM Qty</div>
+                <div class="prodPrevColb">4</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">Order Type</div>
+                <div class="prodPrevColb">E</div>
+              </div> 
+              <div class="prodPrevRowa" style="margin-top:10px;">
+                <div class="prodPrevCola" id="prodPrevSubmit"><a href="#">PURCHASE</a></div>
+                <div class="prodPrevColb" id="prodPrevSubmit"><a href="#">REMOVE</a></div>
+              </div>
+              </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           <div class="browseSection" align="center">
+     <img class="prodImgBack" src="images/thumbNail.jpg" width="145" height="114" />
+      <h2><a href="fuji.html">AirMaster Inc.</a></h2>
+                 <div class="prodPrevRowa">
+                <div class="prodPrevCola">Unique Location Code</div>
+                <div class="prodPrevColb">br office Supplies</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">OZ Part #</div>
+                <div class="prodPrevColb">OZ1EE82</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">Mft. Name</div>
+                <div class="prodPrevColb">Kimberly Clark</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">Short Description</div>
+                <div class="prodPrevColb">Facial Tissue</div>
+              </div>
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">OZ Price</div>
+                <div class="prodPrevColb">$45.67</div>
+              </div> 
+              <div class="prodPrevRowb">
+                <div class="prodPrevCola">UOM</div>
+                <div class="prodPrevColb">BX</div>
+              </div> 
+               <div class="prodPrevRowa">
+                <div class="prodPrevCola">UOM Qty</div>
+                <div class="prodPrevColb">4</div>
+              </div> 
+               <div class="prodPrevRowb">
+                <div class="prodPrevCola">Order Type</div>
+                <div class="prodPrevColb">E</div>
+              </div> 
+              <div class="prodPrevRowa" style="margin-top:10px;">
+                <div class="prodPrevCola" id="prodPrevSubmit"><a href="#">PURCHASE</a></div>
+                <div class="prodPrevColb" id="prodPrevSubmit"><a href="#">REMOVE</a></div>
+              </div>
+              </div>
+          
+          
+         
+         
+         
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+  
+  
+  
+  
+  
+  
+  
+  
+          
+</div>
+
+</div>
+
+
+
+
+
+<div style="position:absolute; margin-top:450px;">
+<div class="botBar">
+<ul>
+                <li class="firstItem"><a href="#"><em class="home"></em>Sign In</a></li>  
+  </ul>
+    </div>
+    </div>
+  
+            
+	       
+</body>
+</html>

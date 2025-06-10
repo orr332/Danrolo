@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>danRoLo - experimental works</title>
+<!-- TemplateEndEditable -->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.windows-engine.js"></script>
+<script type="text/javascript">
+
+var windowCounter = 1;
+
+$(document).ready(function() {
+	
+	$.newWindow({id:"ajaxwindow",posx:400,posy:100,title:"Ajax Window Sample"});
+    $.updateWindowContentWithAjax("ajaxwindow","ajaxcontent.html");
+    
+    $.newWindow({id:"iframewindow",posx:600,posy:200,width:600,height:400,title:"iFrame Window Sample", type:"iframe"});
+    $.updateWindowContent("iframewindow",'<iframe src="http://www.wikipedia.com" width="600" height="400" />');
+    
+    $("#createwindow").click(function(){
+        $.newWindow({title:"New window " + windowCounter++,content:"This is a new window"});
+    });
+    
+    $("#closeall").click(function(){
+        $.closeAllWindows();
+    });
+	
+});
+</script>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+
+
+
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link href="../CSS/list.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#e1dfdf">
+
+
+<div id="contentWrapper">
+  <div id="nav">
+  
+  <ul class="topNav">
+            <li class="remover"><a href="../index.html" class="transition">Home</a></li>
+            <li><a href="../design.html">Design</a><li/>
+            <li><a href="../static.html" class="transition">Static</a></li>
+            <li><a href="../photo.html" class="transition">Photo</a></li>
+            <li><a href="../archive.html" class="transition">Archive</a>
+       
+       <ul class="subNav"> 
+        <li><a href="../tips.html">Web Design Tips</a></li> 
+        <li><a href="../books.html">Resources</a></li>  
+        <li><a href="../books.html">Resources</a></li> 
+        <li><a href="../books.html">Resources</a></li> 
+        <li><a href="../books.html">Resources</a></li> 
+      </ul> 
+      
+      
+      <li/>
+            
+            
+            <li><a href="../about.html" class="transition">About</a></li>
+            <li><a href="../archive.html" class="transition">Contact</a></li>
+    </ul>
+  </div>
+     
+ 
+
+<div class="textBox">
+<!-- TemplateBeginEditable name="mainContent" -->mainContent<!-- TemplateEndEditable -->
+
+</div>
+</div>
+</body>
+</html>

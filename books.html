@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- InstanceEndEditable -->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.windows-engine.js"></script>
+<script type="text/javascript">
+
+var windowCounter = 1;
+
+$(document).ready(function() {
+	
+	$.newWindow({id:"ajaxwindow",posx:400,posy:100,title:"Ajax Window Sample"});
+    $.updateWindowContentWithAjax("ajaxwindow","ajaxcontent.html");
+    
+    $.newWindow({id:"iframewindow",posx:600,posy:200,width:600,height:400,title:"iFrame Window Sample", type:"iframe"});
+    $.updateWindowContent("iframewindow",'<iframe src="http://www.wikipedia.com" width="600" height="400" />');
+    
+    $("#createwindow").click(function(){
+        $.newWindow({title:"New window " + windowCounter++,content:"This is a new window"});
+    });
+    
+    $("#closeall").click(function(){
+        $.closeAllWindows();
+    });
+	
+});
+</script>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+
+
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="CSS/list.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#e1dfdf">
+
+
+<div id="contentWrapper">
+  <div id="nav">
+  
+  <ul class="topNav">
+            <li class="remover"><a href="index.html" class="transition">Home</a></li>
+            <li><a href="design.html">Design</a><li/>
+            <li><a href="static.html" class="transition">Static</a></li>
+            <li><a href="photo.html" class="transition">Photo</a></li>
+            <li><a href="archive.html" class="transition">Archive</a>
+       
+       <ul class="subNav"> 
+        <li><a href="tips.html">Web Design Tips</a></li> 
+        <li><a href="books.html">Resources</a></li>  
+        <li><a href="books.html">Resources</a></li> 
+        <li><a href="books.html">Resources</a></li> 
+        <li><a href="books.html">Resources</a></li> 
+      </ul> 
+      
+      
+      <li/>
+            
+            
+            <li><a href="about.html" class="transition">About</a></li>
+            <li><a href="archive.html" class="transition">Contact</a></li>
+    </ul>
+  </div>
+     
+ 
+
+<div class="textBox">
+<!-- InstanceBeginEditable name="mainContent" --><h1>Web Design Resource Books</h1>
+                
+                                <p><b>Building your Website the Right way using HTML and CSS </b> By Ian Curtis
+                                
+                                <p><b>Principles of Beautiful Web Design</b> By Jason Beaird
+                                                                <p><b>Principles of Successful Freelancing</b> By Mike Burke
+
+                                                                
+                                                                <p><b>Simple SQL </b> By Rudy Limeback
+                                                                
+                                                         <p><b>Principles of Beautiful Web Design</b> By Jason Beaird
+
+
+
+                                
+
+                
+                                <p><b>Becoming a Digital Designer:</b> a Guide to Careers in Web/Video/Broadcast/ Game and Animation Design By Steven Heller and David Womack
+
+
+        <p><b>Designing Interfaces:</b>Patterns for Effective Interaction Design [ILLUSTRATED] (Paperback) By Jenifer Tidwell
+		
+		<p><b>Don't Make Me Think:</b>A Common Sense Approach to Web Usability, 2nd Edition (Paperback) By Steve Krug
+        <p><b>Information Architecture for the World Wide Web:</b>Designing Large-Scale Web Sites [ILLUSTRATED] (Paperback) By Louis Rosenfeld and Peter Morville
+        <p><b>Web ReDesign 2.0:</b>Workflow that Works (2nd Edition) (VOICES) (Paperback) By Kelly Goto and Emily Cotler
+		<p><b>Designing with Web Standards</b>(2nd Edition) (Paperback) By Jeffrey Zeldman
+        <p><b>Web Design Standards Creativity:</b>Innovations in Web Design with XHTML, CSS, and DOM scripting By Friends of ED
+        
+        <h1>Graphic Design Resource</h1>
+	    <p><b>Graphic Design School:</b>a Foundation course in the principles and practices of Graphic Design By David Dabner
+	    <p><b>Grids: Creative Solutions for Graphic Designers:</b>Design grids and layouts for Newspapers, Magazines, Catalogs, Books, Posters, Fliers, and Stationery By Wiley Books
+
+                        <p><b>The Big Book of Layouts</b>By David E. Carter
+                        
+                         <p><b>Drawing for Designers:</b>Drawing Skills, Concept Sketches, Computer Systems, Illustration, Tools and Materials, Presentations, Production Techniques By Alan Pipes
+                <p><b>Sketchbook Design:</b>a Conceptual drawing from the worlds most influential Designers By Timothy O'Donnell
+        <p><b>Art Direction & Editorial Design</b>By Yolanda Zappaterra
+
+        <p><b>Epson Complete Guide to Printing</b>By Rob Sheppard
+		<p><b>Adobe Photoshop CS3 for Photographers</b>a Professional image editors guide to the creative use of Photoshop for the MAC and PC By Martin Evening
+        
+
+       
+                <h1>Technology Resource Books</h1>
+        <p><b>Hacking the Cable Modem:</b>What Cable companies don't want you to know By Der Engel
+		  
+                  <h1>Art and Photography Books</h1>
+        <p><b>DIY: Design it yourself</b>By Ellen Lupton
+                <p><b>Digital By Design: Troika</b>By Conny Freyer, Sebastien Noel, and Eva Rucki
+
+
+		
+        
+        		<h1>Non-Fiction and Fiction Books</h1>
+                <p><b>The Road</b>by Cormac McCarthy   
+                
+          <h1>Self Help</h1>
+                <p><b>Working With Difficult People (Paperback) 
+</b>by Muriel Solomon 
+
+
+<p><b>Existentialism From Dostoevsky to Sarte
+</b>Basic writings of Existentialism many never before translated selected and introduced by Walter Kaufman
+
+<p><b>Change the way you see everything through asset based thinking</b>
+By Kathryn D. Cramer and Hank Wasiak      <!-- InstanceEndEditable -->
+
+</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
