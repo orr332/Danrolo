@@ -1,191 +1,87 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Untitled Document</title>
-<!-- InstanceEndEditable -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap" rel="stylesheet">
 
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.windows-engine.js"></script>
-<script type="text/javascript">
-
-var windowCounter = 1;
-
-$(document).ready(function() {
-	
-	$.newWindow({id:"ajaxwindow",posx:400,posy:100,title:"Ajax Window Sample"});
-    $.updateWindowContentWithAjax("ajaxwindow","ajaxcontent.html");
-    
-    $.newWindow({id:"iframewindow",posx:600,posy:200,width:600,height:400,title:"iFrame Window Sample", type:"iframe"});
-    $.updateWindowContent("iframewindow",'<iframe src="http://www.wikipedia.com" width="600" height="400" />');
-    
-    $("#createwindow").click(function(){
-        $.newWindow({title:"New window " + windowCounter++,content:"This is a new window"});
-    });
-    
-    $("#closeall").click(function(){
-        $.closeAllWindows();
-    });
-	
-});
-</script>
-
-
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-
-
-
-
-
-
-<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
-<link href="CSS/list.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Console Me</title>
+  <link href="css/mainStyle.css" rel="stylesheet" type="text/css" />
+  <link href="css/mediaQueries.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body bgcolor="#e1dfdf">
+<body>
+  <header class="header">
+    <div class="navContainer">
+    <div class="logo">
+Console Me    </div>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Work</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="experiments.html">Experiments</a></li>
+    <li><a href="mailto:orr332@yahoo.com?subject=Hello Orlando!">Contact</a></li>
+  </ul>
+</nav>
+   </div>
+  </header>
+
+  <section class="contentHolder">
+    <div class="contentHolderHeader">
+      <h1>Main home page Gallery</h1>
+      <p>khfkfkfkhfkhfljkfljfkfkhfkhfkhfkhfkhfkfkfhk</p>
+    </div>
+
+    <div class="CardGallery">
+      <div class="Cards">
+        <img src="images/airplane.jpg" alt="">
+        <div class="CardHeader">This page is E-Commerce</div>
+        <Div class="CardParagraph">This will be my personal site and online portfolio combined.</Div>
+        <div class="CardButton"><a class="button-link" href="#">View Project</a></div>
+      </div>
+
+      <div class="Cards">
+        <img src="images/sunset2.jpg" alt="">
+        <div class="CardHeader">E-Commerce</div>
+        <Div class="CardParagraph">This will be my personal site and online portfolio combined.</Div>
+        <div class="CardButton"><a class="button-link" href="#">View Project</a></div>
+      </div>
+
+    
 
 
-<div id="contentWrapper">
-  <div id="nav">
-  
-  <ul class="topNav">
-            <li class="remover"><a href="index.html" class="transition">Home</a></li>
-            <li><a href="design.html">Design</a><li/>
-            <li><a href="static.html" class="transition">Static</a></li>
-            <li><a href="photo.html" class="transition">Photo</a></li>
-            <li><a href="archive.html" class="transition">Archive</a>
-       
-       <ul class="subNav"> 
-        <li><a href="tips.html">Web Design Tips</a></li> 
-        <li><a href="books.html">Resources</a></li>  
-        <li><a href="books.html">Resources</a></li> 
-        <li><a href="books.html">Resources</a></li> 
-        <li><a href="books.html">Resources</a></li> 
-      </ul> 
-      
-      
-      <li/>
-            
-            
-            <li><a href="about.html" class="transition">About</a></li>
-            <li><a href="archive.html" class="transition">Contact</a></li>
-    </ul>
-  </div>
-     
- 
 
-<div class="textBox">
-<!-- InstanceBeginEditable name="mainContent" -->
+      <div class="Cards">
+        <img src="images/airplane.jpg" alt="">
+        <div class="CardHeader">E-Commerce</div>
+        <Div class="CardParagraph">This will be my personal site and online portfolio combined.</Div>
+        <div class="CardButton"><a class="button-link" href="#">View Project</a></div>
+      </div>
 
-
-    <img src="images/sunset2.jpg" alt="" width="323" border="1" />
-
- 
-  <p><b>Photography</b><br/>
- 
- <img src="images/plant.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/pond.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
-<img src="images/pond.jpg" class="thumb" />
-<img src="images/sunset.jpg" class="thumb" /><img src="images/plant.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/pond.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
-<img src="images/pond.jpg" class="thumb" />
-<img src="images/sunset.jpg" class="thumb" /><img src="images/plant.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/pond.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
-<img src="images/pond.jpg" class="thumb" />
-<img src="images/sunset.jpg" class="thumb" /><img src="images/plant.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/pond.jpg" / class="thumb">
- <img src="images/sunset.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
- <img src="images/ceiling.jpg" / class="thumb">
- <img src="images/hallway.jpg" / class="thumb">
- <img src="images/plant.jpg" / class="thumb">
-<img src="images/pond.jpg" class="thumb" />
-<img src="images/sunset.jpg" class="thumb" /></p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
-  <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
-  <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
-  <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
-  <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p><p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
- 
-<!-- InstanceEndEditable -->
-
+    
 </div>
-</div>
+
+
+
+
+  </section>
+
+
+
+  <footer>
+    <div class="footerContainer">
+
+
+    </div>
+  </footer>
+
 </body>
-<!-- InstanceEnd --></html>
+
+</html>
