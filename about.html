@@ -1,95 +1,102 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/mainTemp.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Untitled Document</title>
-<!-- InstanceEndEditable -->
 
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.windows-engine.js"></script>
-<script type="text/javascript">
-
-var windowCounter = 1;
-
-$(document).ready(function() {
-	
-	$.newWindow({id:"ajaxwindow",posx:400,posy:100,title:"Ajax Window Sample"});
-    $.updateWindowContentWithAjax("ajaxwindow","ajaxcontent.html");
-    
-    $.newWindow({id:"iframewindow",posx:600,posy:200,width:600,height:400,title:"iFrame Window Sample", type:"iframe"});
-    $.updateWindowContent("iframewindow",'<iframe src="http://www.wikipedia.com" width="600" height="400" />');
-    
-    $("#createwindow").click(function(){
-        $.newWindow({title:"New window " + windowCounter++,content:"This is a new window"});
-    });
-    
-    $("#closeall").click(function(){
-        $.closeAllWindows();
-    });
-	
-});
-</script>
-
-
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 
 
 
-
-
-<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
-<link href="CSS/list.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Console Me</title>
+  <link href="css/mainStyle.css" rel="stylesheet" type="text/css" />
+  <link href="css/mediaQueries.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body bgcolor="#e1dfdf">
+<body>
+  <div class="Container">
+    <header class="header">
+      <div class="navContainer">
+        <div class="logo">
+          <a href="index.html">Console Me</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+   
 
 
-<div id="contentWrapper">
-  <div id="nav">
-  
-  <ul class="topNav">
-            <li class="remover"><a href="index.html" class="transition">Home</a></li>
-            <li><a href="design.html">Design</a><li/>
-            <li><a href="static.html" class="transition">Static</a></li>
-            <li><a href="photo.html" class="transition">Photo</a></li>
-            <li><a href="archive.html" class="transition">Archive</a>
-       
-       <ul class="subNav"> 
-        <li><a href="tips.html">Web Design Tips</a></li> 
-        <li><a href="books.html">Resources</a></li>  
-        <li><a href="books.html">Resources</a></li> 
-        <li><a href="books.html">Resources</a></li> 
-        <li><a href="books.html">Resources</a></li> 
-      </ul> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="ContentHolder">
+    <div class="contentHolderHeader">
+      <h1>About Me</h1>
       
-      
-      <li/>
-            
-            
-            <li><a href="about.html" class="transition">About</a></li>
-            <li><a href="archive.html" class="transition">Contact</a></li>
-    </ul>
+    <p>Each project featured below reflects my commitment to creating intuitive, accessible, and user-centered digital experiences. From nonprofit websites to e-commerce platforms and enterprise dashboards, I’ve led UX initiatives that blend research, strategy, and design to drive measurable results. My approach is grounded in collaboration, data-informed decisions, and a deep understanding of both user needs and business goals.</p> 
+
   </div>
-     
- 
+    <img src="images/h1.gif" alt="Jon Snow" class="images">
+   <p>I'm Orlando Ruiz, a Chicago-based Web Developer and CMS Specialist with over a decade of experience building
+  high-impact, user-centric digital experiences. My background spans a wide range of industries, where I've delivered
+  responsive websites, email campaigns, and e-commerce solutions that drive engagement and conversions. With expertise
+  in tools like Figma, Adobe Creative Suite, and CMS platforms such as AEM, WordPress, and Sitecore, I bring both
+  creative vision and technical precision to every project. 
+  </p>
+<p>Whether optimizing content for SEO, designing intuitive user interfaces, or managing large-scale CMS migrations, I
+    thrive at the intersection of design, development, and strategy. My collaborative approach and strong communication
+    skills have helped cross-functional teams turn complex ideas into clean, accessible digital products.
+  I'm passionate about using design and code to solve real-world problems, and I’m always looking for new ways to
+  improve user experiences and deliver measurable results.
+</p>
+  </section>
 
-<div class="textBox">
-<!-- InstanceBeginEditable name="mainContent" -->
+    <section class="HeroBanner">
+      <div class="innerBanner">
+        <div class="HeroBannerBox">
+          <h1>Let's Connect</h1>
+      
+          <a class="button-link"" href=" mailto:orr332@yahoo.com?subject=Hello Orlando!">Let's Connect!</a>
 
-<p><b>About Console Site</b><br/>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-      <a href="#"><img src="images/plant.jpg" border="0" / class="thumb"/></a>This is a design blog, which will act as my virtual playground for me in regards to art, design, painting, coding, fashion, and photography.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<!-- InstanceEndEditable -->
+  <footer>
+    <section class="footerContainer">
+      <ul>
+        <li>&#169; 2025 Orlando Ruiz</li>
 
-</div>
-</div>
+      </ul>
+    </section>
+  </footer>
+  </div>
 </body>
-<!-- InstanceEnd --></html>
+
+</html>
