@@ -3,10 +3,7 @@
 
 
 @media (max-width:1800px) {
-	.logo{
-		padding-left: 20px;
-	}
-	
+
 }
 
 
@@ -35,6 +32,9 @@ display: flex;
 flex-direction: column;
 padding: 40px;
 width: 100%;
+}
+.navContainer{
+	padding-left: 40px;
 }
 .HeroBanner{
 		flex-direction: column;
@@ -93,6 +93,9 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 @media (max-width: 880px) {
+	.navContainer{
+		padding-inline: none;
+	}
 	.CardGallery{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
