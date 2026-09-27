@@ -154,8 +154,7 @@ nav ul li a {
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
 	font-size: 14px;
-	font-weight: 500;
-	letter-spacing: .5px;
+
 	align-items: center;
 	text-decoration: none;
 	padding: 8px;
