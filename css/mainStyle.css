@@ -158,10 +158,11 @@ nav ul li a, .contactButton {
     font-family: var(--HeadlineFont);
     font-weight: 500;
     letter-spacing: 0.02em;
-    font-size: 1rem;
+    font-size: 14px;
     align-items: center;
     text-decoration: none;
     transition-duration: 0.5s;
+	text-transform: uppercase;
 }
 
 nav ul li a:hover{
@@ -478,9 +479,9 @@ vertical-align: -1px;
 .SiteFooter{
 	width: 100%;
 	max-width: var(--ContainerWidth);
-	background: var(--CardColor);
-	border-top: var(--favBlue) 2px solid;
     padding: var(--GalleryPadding);
+		background: var(--CardColor);
+	border-top: var(--favBlue) 2px solid;
 }
 
 .footerGrid{
@@ -551,11 +552,6 @@ display: flex;
 }
 
 
-
-.footerContainer{
-	width: 100%;
-}
-
 .footerContainer p, .footerContainer ul li{
 color:white;
   font-size: 14px;
@@ -563,4 +559,14 @@ color:white;
   font-family: "Lato", sans-serif;
   list-style: none;
   line-height: var(--Lineheight);
+}
+
+.CopyrightFooter{
+	background-color: var(--favBlue);
+	flex-direction: column;
+	padding: 2rem;
+}
+.CopyRight{
+	color: white;
+	text-align: center;
 }
