@@ -34,7 +34,7 @@ padding: 40px;
 width: 100%;
 }
 .navContainer{
-	padding-left: 40px;
+	padding-inline: 2rem;
 }
 
 .HeroBannerBox h1{
