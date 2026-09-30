@@ -187,6 +187,10 @@ nav ul li a:hover{
 
 
 .HeroBanner {
+	display: flex;
+	align-items: center;
+	height: 89vh;
+	margin: 0;
 	padding: var(--GalleryPadding);
 	width: 100%;
 	max-width: var(--ContainerWidth);
@@ -212,6 +216,9 @@ gap:2.375rem;
 @media (max-width: 900px) {
 	.HeroBanner{
 		padding:2rem;
+		display: flex;
+		align-items: center;
+		height: auto;
 	}
 
     .HeroGrid{
