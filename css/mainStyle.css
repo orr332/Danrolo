@@ -53,7 +53,7 @@
 }
  */
 
-p, p a{
+p, p a, span{
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -270,10 +270,9 @@ gap:2.375rem;
 .tags span {
 	background-color: white;
     padding: 8px 16px;
-    border: 1px solid #bdbdbd;
+    border: 1px solid #cacaca;;
     border-radius: 999px;
     font-size: 1rem;
-  font-family: "Inter", sans-serif;
 }
 
 .job-meta span:not(:first-child)::before {
@@ -331,12 +330,9 @@ gap:2.375rem;
 .contentHolderHeader h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
-	font-weight: 700;
+	font-weight: 500;
+	letter-spacing: -0.03em;
 	color: var(--favBlue);
-	text-align: left;
-	display: block;
-	margin-left: -1px;
-	margin-bottom: 10px;
 }
 
 
