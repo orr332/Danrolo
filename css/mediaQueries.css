@@ -36,9 +36,7 @@ width: 100%;
 .navContainer{
 	padding-left: 40px;
 }
-.HeroBanner{
-		flex-direction: column;
-}
+
 .HeroBannerBox h1{
 	font-family: var(--HeadlineFont);
 	color: white;
@@ -53,9 +51,7 @@ width: 100%;
 font-size: 1.5rem;
 text-align: left;
 }
-	.contentHolderHeader p{
-		display: none;
-	}
+	
 
 	.Cards h1{
 		font-size: 1.0em;
@@ -111,9 +107,7 @@ padding: 30px;
 		z-index: 999;
 		font-weight: 500;
 	}
-.HeroBannerBox p{
-	display: none;
-}
+
 		.ProjectHolder{
 
 		}
@@ -124,7 +118,5 @@ padding: 30px;
 				width: 100%;
 
 	}
-	.HeroBannerBox p{
-		display: none;
-	}
+	
 }

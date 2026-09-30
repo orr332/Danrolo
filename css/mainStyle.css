@@ -71,7 +71,6 @@ p a{
 	border: var(--BorderColor);
 	width: 100%;
 	height: auto;
-	margin: 10px 0 20px 0;
 }
 	
 
@@ -219,6 +218,9 @@ gap:2.375rem;
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+	.innerHeroCopy {
+		gap: 1rem;
+	}
 	
   .SidebarContent {
         width: 100%;
@@ -263,19 +265,6 @@ gap:2.375rem;
 
 
 
-/* .innerBannerButton, .innerBannerButton a{
-		font-family: var(--HeadlineFont);
-		    letter-spacing: 0.04em;
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  gap: 2rem;
-  color: white;
-  white-space: nowrap;
-}
- */
-
-
 .HeroBannerBox img{
 	border-radius: var(--border-radius);
 	width: 100%;
@@ -311,13 +300,11 @@ gap:2.375rem;
 		 /* box-shadow: var(--box-shadow); */
 }
 .ContainerHero{
-
 }
 .ContentHolderGrid{
 	display: grid;
 grid-template-columns: repeat(auto-fit, minmax(min(398px, 100%), 1fr));
 	gap: 2rem;
-	outline: 2px solid #006699;
 }
 
 .contentHolderHeader h1{
@@ -378,6 +365,7 @@ height: fit-content;
 }
 
 .Cards h1{
+	letter-spacing: -.024em;
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
 	font-weight: 500;
