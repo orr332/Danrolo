@@ -197,6 +197,9 @@ nav ul li a:hover{
 }
 
 .HeroGrid{
+/* 	padding: 2rem;
+	background-color: #333333;
+	border-radius: var(--border-radius); */
      display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -248,8 +251,9 @@ gap:2.375rem;
 	margin: 0 0 16px;
     color: var(--favBlue);
     font-size: 12px;
-    font-weight: 800;
-    letter-spacing: .13em;
+    font-weight: 600;
+    letter-spacing: .04em;
+	text-transform: uppercase;
 }
 .hero-subtitle {
     font-size: clamp(25px, 3vw, 39px);
@@ -319,7 +323,7 @@ gap:2.375rem;
 	display: grid;
 	/* grid-template-columns: 398px 3fr; */
   grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
-  	gap: 2rem;
+  	gap: 4rem;
 }
 
 
