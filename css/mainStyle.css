@@ -56,6 +56,7 @@
 p, p a, span{
   font-family: "Inter", sans-serif;
   font-style: normal;
+  letter-spacing: 0.01em;
   font-weight: 400;
   	font-size:1rem;
 	line-height: var(--Lineheight);
@@ -88,7 +89,12 @@ h1 {
 h1 a:hover {
 	color: #333333;
 }
-
+h2{
+		font-family: var(--HeadlineFont);
+    font-size: var(--SubHeader);
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
 
 
 
@@ -328,11 +334,7 @@ gap:2.375rem;
 }
 
 
-.contentHolderHeader h1{
-	font-family: var(--HeadlineFont);
-    font-size: var(--SubHeader);
-	font-weight: 500;
-	letter-spacing: -0.03em;
+.contentHolderHeader h2{
 	color: var(--favBlue);
 }
 
@@ -517,6 +519,7 @@ display: flex;
 	flex-direction: column;
 	align-items:flex-start;
 	justify-content:left;
+	gap: .5rem;
 }
 
 .footerLinks ul li {
@@ -564,9 +567,10 @@ color:white;
 .CopyrightFooter{
 	background-color: var(--favBlue);
 	flex-direction: column;
-	padding: 2rem;
+	padding: 1rem;
 }
 .CopyRight{
 	color: white;
 	text-align: center;
+	font-size: 12px;
 }
