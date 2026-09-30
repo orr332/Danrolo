@@ -191,6 +191,7 @@ nav ul li a:hover{
 	width: 100%;
 	max-width: var(--ContainerWidth);
 }
+
 .HeroGrid{
      display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -229,6 +230,12 @@ gap:2.375rem;
     .contentHolderHeader {
         width: 100%;
     }
+	.ContentHolderGrid{
+		display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+}
+
 }
 .eyebrow{
 	margin: 0 0 16px;
@@ -303,9 +310,11 @@ gap:2.375rem;
 }
 .ContentHolderGrid{
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(min(398px, 100%), 1fr));
-	gap: 2rem;
+	/* grid-template-columns: 398px 3fr; */
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  	gap: 2rem;
 }
+
 
 .contentHolderHeader h1{
 	font-family: var(--HeadlineFont);
