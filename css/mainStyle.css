@@ -28,7 +28,7 @@
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Albert Sans", sans-serif;
 	--HeaderMain:4rem;
-	--SubHeader: 2.5rem;
+	--SubHeader: 3rem;
 	--CardHeader:1.5em;
 }
 
@@ -62,6 +62,7 @@ p, p a, span{
 	line-height: var(--Lineheight);
 	color: black;
 }
+
 p a{
 	text-decoration: underline;
 	color: #006699;
@@ -198,7 +199,7 @@ nav ul li a:hover{
 	background-color: var(--secondary-color);
 	display: flex;
 	align-items: center;
-	height: 89vh;
+	min-height: 89vh;
 	margin: 0;
 	padding: var(--GalleryPadding);
 	width: 100%;
@@ -217,7 +218,7 @@ nav ul li a:hover{
 .innerHeroCopy{
 	display: flex;
 	flex-direction: column;
-gap:2.375rem;
+gap:2rem;
 }
 
 .HeroGrid h1 {
@@ -267,6 +268,7 @@ gap:2.375rem;
 .hero-subtitle {
     font-size: clamp(25px, 3vw, 39px);
     letter-spacing: -.016em;
+	line-height: normal;
 }
 .job-meta, .tags{
     display: flex;
@@ -313,18 +315,20 @@ gap:2.375rem;
 
 
  .ContentHolder{
+			border-bottom: 1px solid var(--secondary-color);
 	width: 100%;
 	padding: var(--GalleryPadding);
 	max-width: var(--ContainerWidth);
 	background: #FFFFFF;
 	border-top: none;
-	height: auto;
+	min-height: 89vh;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
 }
 .ContainerHero{
+
 }
 .ContentHolderGrid{
 	display: grid;
@@ -335,19 +339,14 @@ gap:2.375rem;
 
 
 .contentHolderHeader h2{
-	color: var(--favBlue);
+	    margin-bottom: 1rem;
 }
 
 
-.ContainerHero::after {
-	display: block;
-	content: '';
-	border-bottom: 1px solid var(--secondary-color);
-	width: 100%;
-	padding-top: 2rem;
-	margin-bottom: 2rem;
+/*PORTFOLIO SECTION*/
+.PortHeading{
+	    margin-bottom: 1rem;
 }
-
 
 .CardGallery {
 	display: grid;
@@ -403,39 +402,6 @@ height: fit-content;
 
 }
 
-.CardInfoGrid{
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-}
-
-
-.CardInfoGridBox ul{
-	display: flex;
-	flex-direction: column;
-	text-decoration: none;	
-  list-style-type: none;
-}
-
- .CardInfoGridBox ul li {
-	color: var(--LightGrey-color);
-	font-family: "Roboto", sans-serif;
-	font-size: .75rem;
-	font-weight: 400;	
-	text-decoration: none;
-	line-height: var(--Lineheight);
- }
-
-.CardInfoGridBox ul li::before{
-  content: '';
-	display: inline-block;
-	background-color: var(--LightGrey-color);
-	border-radius: 2px;
-	margin-right: 5px; 
-	width: 10px;
-	height: 10px;
-vertical-align: -1px;
-} 
 
 
 .CardButton{
@@ -509,7 +475,7 @@ padding: 2rem;
 .footerLinks h2, .footerInfo h2{
 	   font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
-    margin-bottom: 17px;
+    margin-bottom: 1rem;
     letter-spacing: .01em;
     text-transform: uppercase;
 }
