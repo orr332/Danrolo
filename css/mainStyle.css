@@ -20,7 +20,7 @@
 	--image-border-radius: .5rem;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 90rem;
-	--Lineheight: 1.6rem;
+	--Lineheight: 1.6;
 	--SecondaryLineHeight: 5.5rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
@@ -54,7 +54,7 @@
  */
 
 p, p a, span{
-  font-family: "Inter", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-style: normal;
   letter-spacing: 0.01em;
   font-weight: 400;
@@ -96,7 +96,9 @@ h2{
 	letter-spacing: -0.02em;
 }
 
-
+.scroll-margin-top{
+	scroll-margin-top: 80px;
+}
 
 
 
@@ -525,6 +527,7 @@ display: flex;
 }
 
 .footerLinks  ul li a {
+	color: var(--main-color);
     font-family: var(--HeadlineFont);
     font-weight: 500;
     letter-spacing: 0.02em;
