@@ -27,7 +27,7 @@
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Albert Sans", sans-serif;
-	--HeaderMain:5rem;
+	--HeaderMain:clamp(3rem, 5rem, 4rem); 5rem;
 	--SubHeader: 3.5rem;
 	--CardHeader:1.5em;
 }
