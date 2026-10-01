@@ -93,7 +93,7 @@ h2{
 		font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
 	font-weight: 600;
-	letter-spacing: -0.03em;
+	letter-spacing: -0.02em;
 }
 
 
@@ -129,7 +129,7 @@ header .logo a{
 	text-transform: uppercase;
 	font-weight: 500;
 	color: var(--main-color);
-    letter-spacing: .1em;
+    letter-spacing: .01em;
 font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
 	font-style: normal;
@@ -315,14 +315,12 @@ gap:2.375rem;
 	padding: var(--GalleryPadding);
 	max-width: var(--ContainerWidth);
 	background: #FFFFFF;
-	/* border: 1px solid var(--BorderColor); */
 	border-top: none;
 	height: auto;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
-		 /* box-shadow: var(--box-shadow); */
 }
 .ContainerHero{
 }
@@ -461,7 +459,7 @@ vertical-align: -1px;
 	border-top: 1px solid var(--LightGrey-color);
 }
 
-/* .HeroBannerBox .button-link:hover, .button-link:hover {
+.HeroBannerBox .button-link:hover, .button-link:hover {
 	cursor: pointer;
 	color: white;
 		background: #006699;
@@ -476,14 +474,14 @@ vertical-align: -1px;
 	border-radius: 32px;
 	padding: 8px 16px 8px 16px;
 }
- */
+
 
 .SiteFooter{
 	width: 100%;
 	max-width: var(--ContainerWidth);
     padding: var(--GalleryPadding);
 		background: var(--CardColor);
-	border-top: var(--favBlue) 2px solid;
+	border-top: #cdcdcd 1px solid;
 }
 
 .footerGrid{
@@ -510,7 +508,7 @@ padding: 2rem;
 	   font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
     margin-bottom: 17px;
-    letter-spacing: .1em;
+    letter-spacing: .01em;
     text-transform: uppercase;
 }
 
