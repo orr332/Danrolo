@@ -14,7 +14,7 @@
 	--favBlue:#1d2834;
 	/* --LightGreyHighlight: #f4f2ee; */
  --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
-	--GalleryPadding: 5rem;
+	--SitePadding: 4rem;
 	--CardsPadding:1.50rem;
 	--border-radius: 1rem;
 	--image-border-radius: .5rem;
@@ -27,8 +27,8 @@
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Albert Sans", sans-serif;
-	--HeaderMain:4rem;
-	--SubHeader: 3rem;
+	--HeaderMain:5rem;
+	--SubHeader: 3.5rem;
 	--CardHeader:1.5em;
 }
 
@@ -93,7 +93,7 @@ h1 a:hover {
 h2{
 		font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: -0.02em;
 }
 
@@ -201,7 +201,7 @@ nav ul li a:hover{
 	align-items: center;
 	min-height: 89vh;
 	margin: 0;
-	padding: var(--GalleryPadding);
+	padding: var(--SitePadding);
 	width: 100%;
 	max-width: var(--ContainerWidth);
 }
@@ -218,11 +218,11 @@ nav ul li a:hover{
 .innerHeroCopy{
 	display: flex;
 	flex-direction: column;
-gap:2rem;
+gap:1.5rem;
 }
 
 .HeroGrid h1 {
-	line-height: 4rem;
+	line-height: 5rem;
     overflow-wrap: anywhere;
 }
 
@@ -302,7 +302,7 @@ gap:2rem;
 .ProjectHolder{
 	background-color: white;
 	border-radius: var(--border-radius); 
-	padding: var(--GalleryPadding);
+	padding: var(--SitePadding);
 	max-width: var(--ContainerWidth);
 	width: 100%;
 	height:fit-content;
@@ -317,7 +317,7 @@ gap:2rem;
  .ContentHolder{
 			border-bottom: 1px solid var(--secondary-color);
 	width: 100%;
-	padding: var(--GalleryPadding);
+	padding: var(--SitePadding);
 	max-width: var(--ContainerWidth);
 	background: #FFFFFF;
 	border-top: none;
@@ -339,19 +339,19 @@ gap:2rem;
 
 
 .contentHolderHeader h2{
-	    margin-bottom: 1rem;
+	    margin-bottom: 2rem;
 }
 
 
 /*PORTFOLIO SECTION*/
 .PortHeading{
-	    margin-bottom: 1rem;
+	    margin-bottom: 2rem;
 }
 
 .CardGallery {
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-	gap: 2rem; 
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+	gap: 1rem; 
 	justify-content: center;
 	width: 100%;
 }
@@ -384,11 +384,10 @@ height: fit-content;
 }
 
 .Cards h1{
-	letter-spacing: -.024em;
+	letter-spacing: -.01em;
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
-	font-weight: 500;
-	text-align: left;
+	font-weight: 600;
 	color: #000;
 	margin-bottom: 1rem;
 }
@@ -447,7 +446,7 @@ height: fit-content;
 .SiteFooter{
 	width: 100%;
 	max-width: var(--ContainerWidth);
-    padding: var(--GalleryPadding);
+    padding: var(--SitePadding);
 		background: var(--CardColor);
 	border-top: #cdcdcd 1px solid;
 }
