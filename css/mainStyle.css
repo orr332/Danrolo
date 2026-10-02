@@ -22,14 +22,14 @@
 	--ContainerWidth: 90rem;
 	--Lineheight: 1.6;
 	--SecondaryLineHeight: 5.5rem;
-	--main-color: #222222;
+	--main-color: #151515;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Albert Sans", sans-serif;
-	--HeaderMain:clamp(3rem, 5rem, 4rem); 5rem;
-	--SubHeader: 3.5rem;
-	--CardHeader:1.5em;
+	--HeaderMain:clamp(2rem, 5rem, 4rem);
+	--SubHeader: 2.5rem;
+	--CardHeader:1.75rem;
 }
 
 * {
@@ -222,7 +222,7 @@ gap:1.5rem;
 }
 
 .HeroGrid h1 {
-	line-height: 5rem;
+	line-height: 4rem;
     overflow-wrap: anywhere;
 }
 
@@ -255,6 +255,7 @@ gap:1.5rem;
         grid-template-columns: 1fr;
         gap: 3rem;
 }
+  
 
 }
 .eyebrow{
@@ -285,6 +286,7 @@ gap:1.5rem;
     border-radius: 999px;
     font-size: 1rem;
 }
+
 
 .job-meta span:not(:first-child)::before {
     content: "•";
@@ -453,27 +455,34 @@ height: fit-content;
 
 .footerGrid{
 	display: grid;
-	grid-template-columns: 3fr 1fr;
-	gap:4rem;
+	grid-template-columns: 2fr 1fr 1fr;
+	gap:2rem;
 }
 
 
 @media (max-width: 900px) {
+
 	.footerGrid{
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
 	}
-	.SiteFooter{
-padding: 2rem;
 
+
+.CopyRight{
+	flex-direction: column;
+	gap: .5rem;
+}
+	.SiteFooter, .CopyrightFooter{
+padding: 2rem;
+width: 100%;
 	}
 }
 
 
 .footerLinks h2, .footerInfo h2{
 	   font-family: var(--HeadlineFont);
-    font-size: var(--CardHeader);
+    font-size: 1rem;
     margin-bottom: 1rem;
     letter-spacing: .01em;
     text-transform: uppercase;
@@ -531,12 +540,16 @@ color:white;
 }
 
 .CopyrightFooter{
-	background-color: var(--favBlue);
-	flex-direction: column;
-	padding: 1rem;
+	width: 100%;
+	max-width: var(--ContainerWidth);
+    padding: 1rem var(--SitePadding);
+		background: var(--favBlue);
 }
-.CopyRight{
+ .CopyRight{
+	display: flex;
+	justify-content: space-between;
+}
+
+.CopyRight span{
 	color: white;
-	text-align: center;
-	font-size: 12px;
 }
