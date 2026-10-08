@@ -27,7 +27,7 @@
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Albert Sans", sans-serif;
-	--HeaderMain:clamp(2rem, 5rem, 6rem);
+	--HeaderMain:clamp(2rem, 6rem, 10rem);
 	--SubHeader: 2.5rem;
 	--CardHeader:1.5rem;
 }
@@ -222,7 +222,7 @@ gap:1.5rem;
 }
 
 .HeroGrid h1 {
-	line-height: 5rem;
+	line-height: 5.75rem;
     overflow-wrap: anywhere;
 }
 
@@ -291,7 +291,7 @@ gap:1.5rem;
 
 .job-meta p:not(:first-child)::before {
     content: "•";
-    margin-right: 32px;
+	margin-right: 1rem;
     color: rgb(153, 153, 153);
 }
 
