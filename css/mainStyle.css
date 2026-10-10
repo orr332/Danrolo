@@ -56,7 +56,6 @@
 p, p a, span{
   font-family:Arial, Helvetica, sans-serif;
   font-style: normal;
-  letter-spacing: 0.01em;
   font-weight: 400;
   	font-size:1rem;
 	line-height: var(--Lineheight);
